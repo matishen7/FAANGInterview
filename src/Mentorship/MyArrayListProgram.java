@@ -57,13 +57,13 @@ public class MyArrayListProgram {
         }
 
         public void set(int index, int value) throws Exception {
-            if (elements.length > index)
+            if (elements.length < index)
                 elements[index] = value;
             else throw new Exception("Index out of bound");
         }
 
         public int get(int index) throws Exception {
-            if (elements.length > index) return elements[index];
+            if (elements.length < index) return elements[index];
             else throw new Exception("Index out of bound");
         }
 
